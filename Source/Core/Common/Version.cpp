@@ -8,7 +8,7 @@
 
 namespace Common
 {
-#define VERSION_STR "v3.1.5_A"
+#define VERSION_STR "P+ v3.1.5_A"
 #ifdef _DEBUG
 #define BUILD_TYPE_STR "Debug "
 #elif defined DEBUGFAST
