@@ -23,8 +23,8 @@ AboutDolphin::AboutDolphin(wxWindow* parent, wxWindowID id, const wxString& titl
   wxGenericStaticBitmap* const sbDolphinLogo = new wxGenericStaticBitmap(
       this, wxID_ANY, WxUtils::LoadScaledResourceBitmap("dolphin_logo", this));
 
-  const wxString DolphinText = _("Ishiiruka - Dolphin");
-  const wxString RevisionText = Common::scm_desc_str + " - By Bird";
+  const wxString DolphinText = _("UncBuild - Dolphin");
+  const wxString RevisionText = Common::scm_desc_str + " - By Iris Flower, original FPM by Bird";
   const wxString CopyrightText =
       _("(c) 2003-2015+ Dolphin Team. \"GameCube\" and \"Wii\" are trademarks of Nintendo. Dolphin "
         "is not affiliated with Nintendo in any way.");
@@ -52,8 +52,8 @@ AboutDolphin::AboutDolphin(wxWindow* parent, wxWindowID id, const wxString& titl
   wxStaticText* const FirstSpacer = new wxStaticText(this, wxID_ANY, "  |  ");
   wxStaticText* const SecondSpacer = new wxStaticText(this, wxID_ANY, "  |  ");
   wxStaticText* const ThirdSpacer = new wxStaticText(this, wxID_ANY, "  |  ");
-  wxHyperlinkCtrl* const Download = new wxHyperlinkCtrl(this, wxID_ANY, "projectplusgame.com/download/",
-                                                        "https://projectplusgame.com/download/");
+  wxHyperlinkCtrl* const Download = new wxHyperlinkCtrl(this, wxID_ANY, "github.com/WoodleyBrew/UncBuild-Ultimate/releases/latest",
+                                                        "https://github.com/WoodleyBrew/UncBuild-Ultimate/releases/latest");
   wxHyperlinkCtrl* const License =
       new wxHyperlinkCtrl(this, wxID_ANY, LicenseText,
                           "https://github.com/dolphin-emu/dolphin/blob/master/license.txt");

@@ -424,16 +424,16 @@ void MenuBar::AddOptionsMenu()
 void MenuBar::AddHelpMenu()
 {
   QMenu* help_menu = addMenu(tr("&Help"));
-  QAction* website = help_menu->addAction(tr("&Website"));
+  QAction* website = help_menu->addAction(tr("&Iris Bsky"));
   connect(website, &QAction::triggered, this,
-          []() { QDesktopServices::openUrl(QUrl(QStringLiteral("https://dolphin-emu.org/"))); });
-  QAction* documentation = help_menu->addAction(tr("Online &Documentation"));
+          []() { QDesktopServices::openUrl(QUrl(QStringLiteral("https://bsky.app/profile/floweriris.bsky.social"))); });
+  QAction* documentation = help_menu->addAction(tr("&UncBuild Guide"));
   connect(documentation, &QAction::triggered, this, []() {
-    QDesktopServices::openUrl(QUrl(QStringLiteral("https://dolphin-emu.org/docs/guides")));
+    QDesktopServices::openUrl(QUrl(QStringLiteral("https://github.com/WoodleyBrew/UncBuild-Ultimate/blob/master/Guide.md")));
   });
   QAction* github = help_menu->addAction(tr("&GitHub Repository"));
   connect(github, &QAction::triggered, this, []() {
-    QDesktopServices::openUrl(QUrl(QStringLiteral("https://github.com/dolphin-emu/dolphin")));
+    QDesktopServices::openUrl(QUrl(QStringLiteral("https://github.com/WoodleyBrew/UncBuild-Ultimate")));
   });
 
   help_menu->addSeparator();
