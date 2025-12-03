@@ -744,7 +744,7 @@ void NetPlayClient::ThreadFunc()
   if (SConfig::GetInstance().bQoSEnabled)
   {
     if (qos_success)
-      dialog->AppendChat("QoS was successfully enabled, netplay packets should be prioritized over normal packets", false);
+      dialog->AppendChat("QoS was successfully enabled, remember to divide Ping by 8 and round up!", false);
     else
       dialog->AppendChat("QoS couldn't be enabled, other network activity might interfere with netplay", false);
   }
